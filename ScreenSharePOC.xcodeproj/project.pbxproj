@@ -1,0 +1,678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		70410BED2830268700A49AB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70410BEC2830268700A49AB6 /* AppDelegate.swift */; };
+		70410BEF2830268700A49AB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70410BEE2830268700A49AB6 /* SceneDelegate.swift */; };
+		70410BF12830268700A49AB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70410BF02830268700A49AB6 /* ViewController.swift */; };
+		70410BF42830268700A49AB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70410BF22830268700A49AB6 /* Main.storyboard */; };
+		70410BF62830268900A49AB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70410BF52830268900A49AB6 /* Assets.xcassets */; };
+		70410BF92830268900A49AB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70410BF72830268900A49AB6 /* LaunchScreen.storyboard */; };
+		70410C182830286A00A49AB6 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70410C062830283600A49AB6 /* ReplayKit.framework */; };
+		70410C1B2830286A00A49AB6 /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70410C1A2830286A00A49AB6 /* SampleHandler.swift */; };
+		70410C1F2830286A00A49AB6 /* ScreenSharePOC-Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 70410C172830286A00A49AB6 /* ScreenSharePOC-Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		70410C242830293D00A49AB6 /* AgoraUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70410C232830293D00A49AB6 /* AgoraUploader.swift */; };
+		70410C2F2830297700A49AB6 /* AgoraAudioProcessing.mm in Sources */ = {isa = PBXBuildFile; fileRef = 70410C282830297700A49AB6 /* AgoraAudioProcessing.mm */; };
+		70410C312830297700A49AB6 /* libios_resampler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70410C2C2830297700A49AB6 /* libios_resampler.a */; };
+		70410C322830297700A49AB6 /* AgoraAudioTube.mm in Sources */ = {isa = PBXBuildFile; fileRef = 70410C2D2830297700A49AB6 /* AgoraAudioTube.mm */; };
+		70410C8B28302D5400A49AB6 /* KeyCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70410C6828302D5300A49AB6 /* KeyCenter.swift */; };
+		70CCDAEB283038DD00084A44 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70CCDAEA283038DD00084A44 /* Accelerate.framework */; };
+		70CCDAEC2830396800084A44 /* KeyCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70410C6828302D5300A49AB6 /* KeyCenter.swift */; };
+		81091D08641B93B9F4E10827 /* Pods_ScreenSharePOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FF07AA909B541E5C9EB481 /* Pods_ScreenSharePOC.framework */; };
+		FF22BB7C21AC64D241A255D9 /* Pods_ScreenSharePOC_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 794520495678416965F3802F /* Pods_ScreenSharePOC_Extension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70410C1D2830286A00A49AB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70410BE12830268700A49AB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70410C162830286A00A49AB6;
+			remoteInfo = "ScreenSharePOC-Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		70410C0F2830283600A49AB6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				70410C1F2830286A00A49AB6 /* ScreenSharePOC-Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2C0C02F12824A27810A9600A /* Pods-ScreenSharePOC-Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenSharePOC-Extension.release.xcconfig"; path = "Target Support Files/Pods-ScreenSharePOC-Extension/Pods-ScreenSharePOC-Extension.release.xcconfig"; sourceTree = "<group>"; };
+		503ADD1E98052A3BF8EAC603 /* Pods-ScreenSharePOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenSharePOC.release.xcconfig"; path = "Target Support Files/Pods-ScreenSharePOC/Pods-ScreenSharePOC.release.xcconfig"; sourceTree = "<group>"; };
+		69948BB15F1F4F2219036AD8 /* Pods-ScreenSharePOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenSharePOC.debug.xcconfig"; path = "Target Support Files/Pods-ScreenSharePOC/Pods-ScreenSharePOC.debug.xcconfig"; sourceTree = "<group>"; };
+		70410BE92830268700A49AB6 /* ScreenSharePOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenSharePOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70410BEC2830268700A49AB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		70410BEE2830268700A49AB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		70410BF02830268700A49AB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		70410BF32830268700A49AB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		70410BF52830268900A49AB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70410BF82830268900A49AB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		70410BFA2830268900A49AB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70410C062830283600A49AB6 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		70410C172830286A00A49AB6 /* ScreenSharePOC-Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ScreenSharePOC-Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70410C1A2830286A00A49AB6 /* SampleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHandler.swift; sourceTree = "<group>"; };
+		70410C1C2830286A00A49AB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70410C232830293D00A49AB6 /* AgoraUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraUploader.swift; sourceTree = "<group>"; };
+		70410C252830297600A49AB6 /* ScreenSharePOC-Extension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScreenSharePOC-Extension-Bridging-Header.h"; sourceTree = "<group>"; };
+		70410C262830297700A49AB6 /* AgoraAudioProcessing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgoraAudioProcessing.h; sourceTree = "<group>"; };
+		70410C272830297700A49AB6 /* AgoraAudioCriticalSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgoraAudioCriticalSection.h; sourceTree = "<group>"; };
+		70410C282830297700A49AB6 /* AgoraAudioProcessing.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AgoraAudioProcessing.mm; sourceTree = "<group>"; };
+		70410C292830297700A49AB6 /* AgoraAudioTube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgoraAudioTube.h; sourceTree = "<group>"; };
+		70410C2C2830297700A49AB6 /* libios_resampler.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libios_resampler.a; sourceTree = "<group>"; };
+		70410C2D2830297700A49AB6 /* AgoraAudioTube.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AgoraAudioTube.mm; sourceTree = "<group>"; };
+		70410C2E2830297700A49AB6 /* external_resampler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = external_resampler.h; sourceTree = "<group>"; };
+		70410C6828302D5300A49AB6 /* KeyCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyCenter.swift; sourceTree = "<group>"; };
+		70CCDAEA283038DD00084A44 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		794520495678416965F3802F /* Pods_ScreenSharePOC_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenSharePOC_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B31C4897C765C92164363DE2 /* Pods-ScreenSharePOC-Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenSharePOC-Extension.debug.xcconfig"; path = "Target Support Files/Pods-ScreenSharePOC-Extension/Pods-ScreenSharePOC-Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		E7FF07AA909B541E5C9EB481 /* Pods_ScreenSharePOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenSharePOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70410BE62830268700A49AB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81091D08641B93B9F4E10827 /* Pods_ScreenSharePOC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70410C142830286A00A49AB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70410C182830286A00A49AB6 /* ReplayKit.framework in Frameworks */,
+				70CCDAEB283038DD00084A44 /* Accelerate.framework in Frameworks */,
+				FF22BB7C21AC64D241A255D9 /* Pods_ScreenSharePOC_Extension.framework in Frameworks */,
+				70410C312830297700A49AB6 /* libios_resampler.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70410BE02830268700A49AB6 = {
+			isa = PBXGroup;
+			children = (
+				70410BEB2830268700A49AB6 /* ScreenSharePOC */,
+				70410C192830286A00A49AB6 /* ScreenSharePOC-Extension */,
+				70410C052830283600A49AB6 /* Frameworks */,
+				70410BEA2830268700A49AB6 /* Products */,
+				CE5EFCA23D8D4E81D8E44C39 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		70410BEA2830268700A49AB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70410BE92830268700A49AB6 /* ScreenSharePOC.app */,
+				70410C172830286A00A49AB6 /* ScreenSharePOC-Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70410BEB2830268700A49AB6 /* ScreenSharePOC */ = {
+			isa = PBXGroup;
+			children = (
+				70410C6828302D5300A49AB6 /* KeyCenter.swift */,
+				70410BEC2830268700A49AB6 /* AppDelegate.swift */,
+				70410BEE2830268700A49AB6 /* SceneDelegate.swift */,
+				70410BF02830268700A49AB6 /* ViewController.swift */,
+				70410BF22830268700A49AB6 /* Main.storyboard */,
+				70410BF52830268900A49AB6 /* Assets.xcassets */,
+				70410BF72830268900A49AB6 /* LaunchScreen.storyboard */,
+				70410BFA2830268900A49AB6 /* Info.plist */,
+			);
+			path = ScreenSharePOC;
+			sourceTree = "<group>";
+		};
+		70410C052830283600A49AB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70CCDAEA283038DD00084A44 /* Accelerate.framework */,
+				70410C062830283600A49AB6 /* ReplayKit.framework */,
+				E7FF07AA909B541E5C9EB481 /* Pods_ScreenSharePOC.framework */,
+				794520495678416965F3802F /* Pods_ScreenSharePOC_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70410C192830286A00A49AB6 /* ScreenSharePOC-Extension */ = {
+			isa = PBXGroup;
+			children = (
+				70410C272830297700A49AB6 /* AgoraAudioCriticalSection.h */,
+				70410C262830297700A49AB6 /* AgoraAudioProcessing.h */,
+				70410C282830297700A49AB6 /* AgoraAudioProcessing.mm */,
+				70410C292830297700A49AB6 /* AgoraAudioTube.h */,
+				70410C2D2830297700A49AB6 /* AgoraAudioTube.mm */,
+				70410C2E2830297700A49AB6 /* external_resampler.h */,
+				70410C2C2830297700A49AB6 /* libios_resampler.a */,
+				70410C1A2830286A00A49AB6 /* SampleHandler.swift */,
+				70410C1C2830286A00A49AB6 /* Info.plist */,
+				70410C232830293D00A49AB6 /* AgoraUploader.swift */,
+				70410C252830297600A49AB6 /* ScreenSharePOC-Extension-Bridging-Header.h */,
+			);
+			path = "ScreenSharePOC-Extension";
+			sourceTree = "<group>";
+		};
+		CE5EFCA23D8D4E81D8E44C39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69948BB15F1F4F2219036AD8 /* Pods-ScreenSharePOC.debug.xcconfig */,
+				503ADD1E98052A3BF8EAC603 /* Pods-ScreenSharePOC.release.xcconfig */,
+				B31C4897C765C92164363DE2 /* Pods-ScreenSharePOC-Extension.debug.xcconfig */,
+				2C0C02F12824A27810A9600A /* Pods-ScreenSharePOC-Extension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70410BE82830268700A49AB6 /* ScreenSharePOC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70410BFD2830268900A49AB6 /* Build configuration list for PBXNativeTarget "ScreenSharePOC" */;
+			buildPhases = (
+				A4EEA5576E96E8D44407308B /* [CP] Check Pods Manifest.lock */,
+				70410BE52830268700A49AB6 /* Sources */,
+				70410BE62830268700A49AB6 /* Frameworks */,
+				70410BE72830268700A49AB6 /* Resources */,
+				70410C0F2830283600A49AB6 /* Embed App Extensions */,
+				3FB42D967AFBB2424215FD92 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70410C1E2830286A00A49AB6 /* PBXTargetDependency */,
+			);
+			name = ScreenSharePOC;
+			productName = ScreenSharePOC;
+			productReference = 70410BE92830268700A49AB6 /* ScreenSharePOC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		70410C162830286A00A49AB6 /* ScreenSharePOC-Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70410C202830286A00A49AB6 /* Build configuration list for PBXNativeTarget "ScreenSharePOC-Extension" */;
+			buildPhases = (
+				D2AC4486A23EC21AC10B5A5A /* [CP] Check Pods Manifest.lock */,
+				70410C132830286A00A49AB6 /* Sources */,
+				70410C142830286A00A49AB6 /* Frameworks */,
+				70410C152830286A00A49AB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ScreenSharePOC-Extension";
+			productName = "ScreenSharePOC-Extension";
+			productReference = 70410C172830286A00A49AB6 /* ScreenSharePOC-Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70410BE12830268700A49AB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					70410BE82830268700A49AB6 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					70410C162830286A00A49AB6 = {
+						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
+					};
+				};
+			};
+			buildConfigurationList = 70410BE42830268700A49AB6 /* Build configuration list for PBXProject "ScreenSharePOC" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 70410BE02830268700A49AB6;
+			productRefGroup = 70410BEA2830268700A49AB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70410BE82830268700A49AB6 /* ScreenSharePOC */,
+				70410C162830286A00A49AB6 /* ScreenSharePOC-Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70410BE72830268700A49AB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70410BF92830268900A49AB6 /* LaunchScreen.storyboard in Resources */,
+				70410BF62830268900A49AB6 /* Assets.xcassets in Resources */,
+				70410BF42830268700A49AB6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70410C152830286A00A49AB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3FB42D967AFBB2424215FD92 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScreenSharePOC/Pods-ScreenSharePOC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScreenSharePOC/Pods-ScreenSharePOC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScreenSharePOC/Pods-ScreenSharePOC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4EEA5576E96E8D44407308B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScreenSharePOC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2AC4486A23EC21AC10B5A5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScreenSharePOC-Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70410BE52830268700A49AB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70410BF12830268700A49AB6 /* ViewController.swift in Sources */,
+				70410BED2830268700A49AB6 /* AppDelegate.swift in Sources */,
+				70410BEF2830268700A49AB6 /* SceneDelegate.swift in Sources */,
+				70410C8B28302D5400A49AB6 /* KeyCenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70410C132830286A00A49AB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70CCDAEC2830396800084A44 /* KeyCenter.swift in Sources */,
+				70410C242830293D00A49AB6 /* AgoraUploader.swift in Sources */,
+				70410C322830297700A49AB6 /* AgoraAudioTube.mm in Sources */,
+				70410C2F2830297700A49AB6 /* AgoraAudioProcessing.mm in Sources */,
+				70410C1B2830286A00A49AB6 /* SampleHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		70410C1E2830286A00A49AB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70410C162830286A00A49AB6 /* ScreenSharePOC-Extension */;
+			targetProxy = 70410C1D2830286A00A49AB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		70410BF22830268700A49AB6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70410BF32830268700A49AB6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		70410BF72830268900A49AB6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70410BF82830268900A49AB6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		70410BFB2830268900A49AB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		70410BFC2830268900A49AB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70410BFE2830268900A49AB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69948BB15F1F4F2219036AD8 /* Pods-ScreenSharePOC.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PBA9B3F737;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenSharePOC/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anwesh.screenshare.poc.ScreenSharePOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		70410BFF2830268900A49AB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 503ADD1E98052A3BF8EAC603 /* Pods-ScreenSharePOC.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PBA9B3F737;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenSharePOC/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anwesh.screenshare.poc.ScreenSharePOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		70410C212830286A00A49AB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B31C4897C765C92164363DE2 /* Pods-ScreenSharePOC-Extension.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PBA9B3F737;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ScreenSharePOC-Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "ScreenSharePOC-Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ScreenSharePOC-Extension",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anwesh.screenshare.poc.ScreenSharePOC.ScreenSharePOC-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ScreenSharePOC-Extension/ScreenSharePOC-Extension-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		70410C222830286A00A49AB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C0C02F12824A27810A9600A /* Pods-ScreenSharePOC-Extension.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PBA9B3F737;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ScreenSharePOC-Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "ScreenSharePOC-Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ScreenSharePOC-Extension",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anwesh.screenshare.poc.ScreenSharePOC.ScreenSharePOC-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ScreenSharePOC-Extension/ScreenSharePOC-Extension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70410BE42830268700A49AB6 /* Build configuration list for PBXProject "ScreenSharePOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70410BFB2830268900A49AB6 /* Debug */,
+				70410BFC2830268900A49AB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70410BFD2830268900A49AB6 /* Build configuration list for PBXNativeTarget "ScreenSharePOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70410BFE2830268900A49AB6 /* Debug */,
+				70410BFF2830268900A49AB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70410C202830286A00A49AB6 /* Build configuration list for PBXNativeTarget "ScreenSharePOC-Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70410C212830286A00A49AB6 /* Debug */,
+				70410C222830286A00A49AB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 70410BE12830268700A49AB6 /* Project object */;
+}
